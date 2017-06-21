@@ -17,9 +17,13 @@ h1, h2, h3, h4, .navbar {
 	text-align: center;
 }
 
-.icon-flipped {
-    transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
+.event {
+	font-size: 20px;
+	text-align: center;
+}
+
+.event > .panel-heading {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+	text-align: center;
 }
