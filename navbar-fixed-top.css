@@ -17,6 +17,17 @@ h1, h2, h3, h4, .navbar {
 	text-align: center;
 }
 
+.event-listing {
+	font-size: 20px;
+	text-align: left;
+}
+
+.event-listing > .panel-heading {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 30px;
+	text-align: center;
+}
+
 .event {
 	font-size: 20px;
 	text-align: center;
