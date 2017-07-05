@@ -16,7 +16,8 @@
 
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Baskerville:400,400i,700" rel="stylesheet">
@@ -37,10 +38,17 @@
     <meta name="twitter:image" content="https://devrel.salon/images/paris1643twitter.jpg">
 
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-101258282-1', 'auto');
         ga('send', 'pageview');
@@ -53,7 +61,8 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -65,7 +74,8 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                       aria-expanded="false">
                         Past Meetings <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
@@ -73,7 +83,8 @@
                     </ul>
                 </li>
                 <li><a href="mailto:howdy@devrel.salon">Contact</a></li>
-                <li><a href="https://twitter.com/DevRelSalon"><i class="fa fa-twitter" aria-hidden="true"></i> @DevRelSalon</a></li>
+                <li><a href="https://twitter.com/DevRelSalon"><i class="fa fa-twitter" aria-hidden="true"></i>
+                    @DevRelSalon</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -81,16 +92,57 @@
 
 <div class="container">
 
-    <div class="col-md-6 col-md-offset-3 panel panel-default event-listing">
+    <div class="col-md-8 col-md-offset-2 panel panel-default event-listing">
         <div class="panel-heading">First Event: 4 July 2017</div>
         <div class="panel-body">
-            <p>Our premier event was everything we'd hoped it would be: Thirteen people of various backgrounds came together at the Delaville Café in Paris's 10th for an evening of discussing developer relations and marketing.</p>
+            <p>Our premier event was everything we'd hoped it would be: Thirteen people of various backgrounds came
+                together at the Delaville Café in Paris's 10th for an evening of discussing developer relations and
+                marketing.</p>
             <p>The two topics of the evening:
-                <ul>
-                    <li>Effective marketing of developer tools, and the best channels to use.</li>
-                    <li>Methods for collecting survey data from developers</li>
-                </ul>
-            We took notes on the conversations that ensued, and they will be posted here soon-ish.</p>
+            <ul>
+                <li>Effective marketing of developer tools, and the best channels to use.</li>
+                <li>Methods for collecting survey data from developers</li>
+            </ul>
+            </p>
+            <h2>Marketing developer tools, and the channels to use</h2>
+            <p></p>
+            <h2>Collecting survey data from developers</h2>
+            <p>
+            <ul>
+                <li><b>Wrap it in code.</b> Create a short-lifespan repo somehow linked to the survey/whatever and
+                    present it as a coding challenge.
+                </li>
+                <li><b>Standard incentives.</b> Developers are not immune to dinner-for-two or Amazon-gift-card offers.
+                </li>
+                <li><b>Face-to-face.</b> MeetUps and IRL social gatherings encourage a higher level of engagement; in
+                    that context, asking someone for 5 minutes of their time ain't no thang (but asking a stranger for 5
+                    minutes is an awful lot).
+                </li>
+                <li><b>Don't underestimate FB groups.</b> Facebook is not usually regarded as a "den of dev" but
+                    everyone is on it, so it logically follows that developers are there too. They're a bit trickier to
+                    find is all. There are large FB groups devoted to DevOps, Python, and so on. Respect group rules,
+                    but beyond that, it's a great way to plead to a whole bunch of developers.
+                </li>
+                <li><b>Public Slack.</b> Another place we often forget where developers hang out is the ever-growing
+                    number of public Slack channels. There is no definitive global directory of these, but <a
+                            href="http://www.slacklist.info/">Slacklist (a curated list)</a> is a pretty good place to
+                    start.
+                </li>
+                <li><b>Hacker News.</b> We all know: Quora, Slashdot, StackOverflow etc. but we tend to forget
+                    Y-Combinator's very old-school soapbox/bulletin board known as <a
+                            href="https://news.ycombinator.com/">Hacker News</a>. The signal/noise ratio is not always
+                    great, but a shout-out that catches someone's interest can spread quickly into other channels.
+                </li>
+                <li><b>Remember phone calls?</b> Human psychology 101: chatting on the phone for 5 minutes is nothing.
+                    Filling in a form on a computer for 5 minutes is eternity. If your survey is long-ish, try outbound
+                    calling (many inexpensive services available) and have the outbound caller fill in the form on the
+                    interviewee's behalf. Just switching the user experience to conversation will make it a whole new
+                    thing.
+                </li>
+                <li><b>Give them their motivation.</b> Like movie stars, developers benefit from being reminded why they
+                    should do this or that. Putting the effort in context, reminding them of the value of responding, is
+                    helpful.
+                </li>
         </div>
     </div>
 
@@ -102,6 +154,8 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </body>
 </html>
