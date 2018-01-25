@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>The Paris DevRel Salon</title>
+    <title>{{ site.title }}</title>
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +21,7 @@
 
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Baskerville:400,400i,700" rel="stylesheet">
-    <link href="../navbar-fixed-top.css" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,9 +33,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@DevRelSalon">
     <meta name="twitter:creator" content="@DEGoodmanWilson">
-    <meta name="twitter:title" content="The Paris DevRel Salon: 17 August 2017">
-    <meta name="twitter:description" content="We gathered, and we discussed.">
-    <meta name="twitter:image" content="https://devrel.salon/images/paris1643twitter.jpg">
+    <meta name="twitter:title" content="The Paris DevRel Salon: Summer on the Seine">
+    <meta name="twitter:description"
+          content="17 Aug: You practice developer relations or developer marketing. Let's gather and learn from and support each other.">
+    <meta name="twitter:image" content="https://devrel.salon/images/SummerOnTheSeineTwitter.png">
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -61,33 +62,29 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">The Paris DevRel Salon</a>
         </div>
+        <div id="logo"><a href="/"><img src="/images/logo.png"></a></div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li role="presentation" class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                       aria-expanded="false">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         Past Meetings <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="/meetings/20171026.html">26 October 2017</a></li>
-                        <li><a href="/meetings/20170921.html">21 September 2017</a></li>
-                        <li><a href="/meetings/20170817.html">17 August 2017</a></li>
-                        <li><a href="/meetings/20170704.html">4 July 2017</a></li>
+                        {% for post in site.posts %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endfor %}
                     </ul>
                 </li>
                 <li><a href="mailto:howdy@devrel.salon">Contact</a></li>
-                <li><a href="https://twitter.com/DevRelSalon"><i class="fa fa-twitter" aria-hidden="true"></i>
-                    @DevRelSalon</a></li>
+                <li><a href="https://twitter.com/DevRelSalon"><i class="fa fa-twitter" aria-hidden="true"></i> @DevRelSalon</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -96,9 +93,9 @@
 <div class="container">
 
     <div class="col-md-8 col-md-offset-2 panel panel-default event-listing">
-        <div class="panel-heading">Third Event: 21 September 2017</div>
+        <div class="panel-heading">{{ page.title }}</div>
         <div class="panel-body">
-            <p>For the final summer evening in Paris, four devrellers gathered once more on the banks of the Seine for our third event. The small size, and the fair weather meant that conversation was far less structured, but talk centered around <a href="https://www.givebriq.com">Briq</a>, and how to convince developers to invest in a new platform.</p>
+            {{ content }}
         </div>
     </div>
 

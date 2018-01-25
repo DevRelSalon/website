@@ -9,7 +9,7 @@ h1, h2, h3, h4, .navbar {
 }
 
 .navbar {
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
 .jumbotron > h1 {
@@ -29,6 +29,7 @@ h1, h2, h3, h4, .navbar {
 }
 
 .event {
+	margin-top: 30px;
 	font-size: 20px;
 	text-align: center;
 }
@@ -37,4 +38,16 @@ h1, h2, h3, h4, .navbar {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 30px;
 	text-align: center;
+}
+
+.navbar-header {
+	float: right;
+}
+
+#logo {
+	text-align: center;
+}
+
+#logo img {
+	width: 40%;
 }
