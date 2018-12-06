@@ -17,7 +17,7 @@ But not a meetup.
 > is another tech meetup <br />
 > like I need a hole in my head
 
-So let’s not. Let’s do something else instead. This is Paris—let’s do something more egalitarian, something…I don't know, Parisian.
+So let’s not. Let’s do something else instead. This started in Paris—let’s do something more egalitarian, something…I don't know, Parisian.
 
 Like a salon. The salons of 17th and 18th century Paris were the most important forum for intellectual discourse of the era, and were the primary conduit for the Renaissance from Italy to the rest of Western Europe. This sounds fun.
 
