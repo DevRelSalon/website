@@ -1,0 +1,52 @@
+{{ define "main" }}
+
+<p>A mostly regular meetup for developer relations professionals (and aspiring professionals) to meet, learn, and grow together.</p>
+
+<h2>Come hang out with us!</h2>
+
+<p>We currently meet in three cities across Europe. Each location has its own Meetup page where you can connect and RSVP:</p>
+
+<ul>
+    <li><a href="https://www.meetup.com/Paris-DevRel-Salon/">Paris</a> (the OG)</li>
+    <li><a href="https://www.meetup.com/Amsterdam-DevRel-Salon/">Amsterdam</a></li>
+    <li>Lisbon (coming soon)</li>
+</ul>
+
+<h2>Contact us</h2>
+
+<ul>
+    <li>email: <a href="mailto:howdy@devrel.salon">howdy@devrel.salon</a></li>
+    <li>twitter: <a href="https://twitter.com/DevRelSalon">@DevRelSalon</a></li>
+</ul>
+
+<h2>DevRel Jobs</h2>
+
+<p>Have a job you'd like to see listed here? <a href="mailto:howdy@devrel.salon?subject=DRS%20job%20listing">Drop us a line</a> and let us know.</p>
+
+<div id="listings">
+{{ range (where .Site.Pages "Section" "jobs") }}
+{{ range .Pages }}
+<hr />
+    <div>
+        <a id="{{ .Params.company }}-{{ .Params.jobtitle }}" />
+        <h3>{{ .Params.jobtitle }} — <a href="{{ .Params.companylink }}">{{ .Params.company }}</a></h3>
+        <ul>
+            <li>Job title: {{ .Params.jobtitle }}</li>
+            <li>Salary range: {{ .Params.salaryrange }}</li>
+            <li>Location: {{ .Params.location }}</li>
+            <li>Travel: {{ .Params.travel }}</li>
+            <li>Contact: <a href="{{ .Params.contactlink }}">{{ .Params.contact }}</a>
+        </ul>
+        <p><a href="{{ .Params.joblink }}">More information</a></p>
+    </div>
+{{ end }}
+{{ end }}
+<hr />
+</div>
+
+
+<div id="footer">
+
+</div>
+
+{{ end }}

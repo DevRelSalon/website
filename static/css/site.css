@@ -1,0 +1,32 @@
+body {
+  font-family: 'Crimson Text', serif;
+  font-size: 2em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+#content {
+    width: 66vw;
+    margin: 0 auto;
+}
+
+#logo {
+
+    /*text-align: center;*/
+}
+
+#logo img {
+    width: max(66vw, 500px);
+    display: block;
+    margin: 0 auto;
+}
+
+#listings {
+    font-size: 1em;
+    width: 60vw;
+    margin: 0 auto;
+
+}

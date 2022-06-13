@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>{{ .Site.Title }}</title>
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Baskerville:400,400i,700" rel="stylesheet">
+    <link href="/css/site.css" rel="stylesheet">
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@DevRelSalon">
+    <meta name="twitter:creator" content="@DEGoodmanWilson">
+    <meta name="twitter:title" content="The DevRel Salon">
+    <meta name="twitter:description"
+          content="You practice developer relations or developer marketing. Let's gather and learn from and support each other.">
+    <meta name="twitter:image" content="https://devrel.salon/images/paris1739%20twitter.jpg">
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.goodman-wilson.com/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '5']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
+</head>
+
+<body>
+
+<div id="logo">
+  <img src="images/logo.png" />
+</div>
+
+<div id="content">
+{{ block "main" . }}
+  <!-- The part of the page that begins to differ between templates -->
+{{ end }}
+</div>
+
+<div id="#footer">
+</div>
+
+</body>
+
+</html>
+
